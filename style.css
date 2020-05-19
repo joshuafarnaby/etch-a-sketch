@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: monaco;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+header {
+  margin: 1rem;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 10px auto 20px auto;
+  width: 500px;
+}
+
+.btn {
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid rgb(119, 119, 119);
+  width: 75px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline-color: #fff;
+  outline-width: 0;
+}
+
+#sketch-box {
+  display: grid;
+  border: 1px solid #000;
+  /* height: 500px;
+  width: 500px; */
+  height: 700px;
+  width: 700px;
+  margin: 1rem auto;
+}
+
+/* .wrapper {
+  display: grid;
+} */
+
+/* #sketch-grid > div:nth-child(odd) {
+  background: #ddd
+} */
+
+#grid-square {
+  background: #fff;
+  /* border: 1px solid #aaa; */
+}
+
+/* .grid-square-black {
+  background: #000;
+} */
+
+/* .grid-square:hover {
+  background: #000;
+} */
+
+@media (max-width: 1000px) {
+  #sketch-box {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  #sketch-box {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  #buttons {
+    width: 400px;
+  }
+
+  #sketch-box {
+    height: 400px;
+    width: 400px;
+  }
+}
